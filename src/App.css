@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+*
+{
+  font-family: 'Arvo', serif;
+  margin: 0%;
+  padding: 0%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-section
+{
+  height: 100vh;
+  border-radius: 10px 10px 0px 0px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.day-section
+{
+  
+  background-image: url('./assets/weather-api.jpg');
+  background-size: cover;
+  color:#f58551  !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.night-section
+{
+  background-image: url('./assets/night-section.jpg');
+   background-size: cover;
+  color: white !important;
+}
+input, .input-group-text
+{
+  height: 10vh;
+  background-color: white !important;
+}
+.heading
+{
+  font-size: 11vw;
+}
+.day-section .primary
+{
+  background-color: #FCC9B4;
+}
+.night-section .primary
+{
+  background-color: #8576DF;
+}
+input[type="text"]:focus {  
+  
+  border: none; 
+  box-shadow: none !important;
+  outline: 0 none !important;
+}
+.accordion-button:focus, .accordion-button, .accordion, .accordion-flush, .collapsed
+{
+  color: white !important; 
+  box-shadow: none !important;
+  outline: 0 none !important;
+  border: none;
+  background: #FCC9B4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6E6BD6, #FCC9B4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6E6BD6, #FCC9B4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+img
+{
+  border: none !important;
+  background-color: rgba(0, 255, 255, 0) !important;
+  height: 100px;
+}
+.brand
+{
   color: white;
+  text-shadow: 2px 2px 2px black;
 }
-
-.App-link {
-  color: #61dafb;
+.day-section .table
+{
+ background-color: #ff996660;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.night-section .table
+{
+ background-color: #8676df63;
+}
+.accordion-button::after
+{
+  display: none;
+}
+.forecast-section
+{
+  background-color: white;
+}
+.accord-image
+{
+  height: 50px;
 }
