@@ -8,14 +8,18 @@
 .hero-section
 {
   height: 100vh;
-  border-radius: 10px 10px 0px 0px;
+  
+}
+th,td
+{
+  font-size: 2vw;
 }
 .day-section
 {
-  
+
   background-image: url('./assets/weather-api.jpg');
   background-size: cover;
-  color:#f58551  !important;
+  color:#ffffff  !important;
 }
 .night-section
 {
@@ -32,9 +36,16 @@ input, .input-group-text
 {
   font-size: 11vw;
 }
+
+/* .custom-card
+{
+  font-size: 300%;
+} */
+
 .day-section .primary
 {
-  background-color: #FCC9B4;
+  background-color: #ff875875;
+  height: 47vh;
 }
 .night-section .primary
 {

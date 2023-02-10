@@ -67,7 +67,7 @@ function App() {
   return (
     <>
       <div
-        className={`container mt-5 border ${dayNight} shadow-lg hero-section`}
+        className={`container mt-lg-5 mt-md-3 mt-sm-0  border rounded-lg-5 rounded-md-5 rounded-sm-0 ${dayNight} shadow-lg hero-section`}
       >
         <p className="text-uppercase fw-bold fw-bolder h3 mt-3 brand text-shadow">
             Weather API Application <sup>&reg;</sup>
@@ -100,19 +100,26 @@ function App() {
             <>
               {report?.main ? (
                 <>
-                  <h1 className="heading ms-3">
-                    {report.main.temp}
-                    <sup className="text-lowercase">o</sup>C
-                  </h1>
-                  <span className="h2 primary p-5 rounded-pill mb-3">
-                    {report.name}
+                 <div className="primary border rounded py-5 d-flex flex-column justify-content-center align-items-center" >
+                 <p className="h1">
+                 {report.name},{report.sys.country}
+                 </p>
+                 <div className="d-flex h1 mt-4">
                     <img
                       src={`https://openweathermap.org/img/wn/${report.weather[0].icon}@2x.png`}
+                      
                     />
-                  </span>
+                    
+                   <p className="pt-4">
+                   {report.main.temp}
+                    <sup className="text-lowercase">o</sup>C
+                   </p>
+                    </div>
+  
+                  </div>
 
-                  <div className="container-fluid mt-5 d-flex">
-                    <table className="table table-responsive table-hover text-light fs-5">
+                  <div className="container-fluid mt-5">
+                    <table className="table table-responsive table-hover text-light ">
                       <thead>
                         <tr>
                           <th>MIN TEMPERATURE</th>
